@@ -41,10 +41,15 @@ Application (with the embedded H2 database) is ready to be used ! You can access
 - Is the application running as expected
 - No performance issues
 
+
+#### Changes I made (spent around 2 hours)
+- added logs for batter understanding
+- added code to handle EmployeeNotFound conditions
+- added code to avoide errors which can be occur at a time of DB operations
+- added comments in service for batter method understanding
+- added some Unit test code (could add more code for other operations if have time)
+
 #### Your experience in Java
 
-Please let us know more about your Java experience in a few sentences. 
-For example: 
-- I have 3 years experience in Java and I started to use Spring Boot from last year
-- I'm a beginner and just recently learned Spring Boot
-- I know Spring Boot very well and have been using it for many years
+- I have 5 years experience in Java and I around 3 years of experiance in Spring Boot
+- I have experiance of spring boot in terms of web, api or batch development

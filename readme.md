@@ -49,6 +49,11 @@ Application (with the embedded H2 database) is ready to be used ! You can access
 - added comments in service for batter method understanding
 - added some Unit test code (could add more code for other operations if have time)
 
+#### Last changes
+- to handle API response used Response Entity 
+- added more Unit tests
+- tried to add caching (in progress)
+
 #### Your experience in Java
 
 - I have 5 years experience in Java and I around 3 years of experiance in Spring Boot

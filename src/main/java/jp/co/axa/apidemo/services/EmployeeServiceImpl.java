@@ -64,16 +64,17 @@ public class EmployeeServiceImpl implements EmployeeService{
         }
     }
 
-    public void updateEmployee(Employee employee) {
+    public Employee updateEmployee(Employee employee) {
         Optional<Employee> optionalEmployee = employeeRepository.findById(employee.getId());
         if (!optionalEmployee.isPresent()) {
             logger.error("Employee Not Found. Employee Id :{}", employee.getId());
             throw new EmployeeNotFoundException(employee.getId());
         }
         try {
-            employeeRepository.save(employee);
+            employee = employeeRepository.save(employee);
         } catch (Exception e) {
             logger.error("Error occurred while updating employee information.");
         }
+        return employee;
     }
 }
